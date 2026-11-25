@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:,">
-<title>Bright Consultancy: Tender Support for UK Care Providers</title>
+<title>Bright Consultancy | UK Home Care Tender Specialists</title>
 <meta name="description" content="Bright Consultancy helps UK care providers find the right council routes in their area and write bids that answer what buyers score. Free bid or no bid check first.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,6 +52,18 @@ section{padding:3.8rem 0}
 .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
 .btn-light{background:#fff;color:var(--navy)}
 .btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+/* Pages (Home / Services / Contact) */
+.page{display:block}
+nav.main a.active{background:var(--navy2);color:#fff;box-shadow:inset 0 -3px 0 var(--accent)}
+.page-hero{background:var(--navy);color:#fff;padding:2.8rem 0 3rem}
+.page-hero h1{color:#fff}
+.page-hero .label{color:#ffb066}
+.page-hero p.sub{color:#cfdcf0;font-size:1.12rem;margin-top:.9rem;max-width:60ch}
+.home-cta{background:var(--surface);border-block:1px solid var(--line)}
+.home-cta-in{display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap}
+.home-cta p{color:var(--muted);margin-top:.5rem;max-width:56ch}
+.home-cta-btns{display:flex;gap:.8rem;flex-wrap:wrap;flex:none}
+@media (max-width:600px){.home-cta-btns{width:100%}.home-cta-btns .btn{flex:1}}
 /* Header */
 .topbar{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20}
 .topbar-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;flex-wrap:wrap}
@@ -246,17 +258,16 @@ footer a:hover{color:#fff;text-decoration:underline}
 </style>
 </head>
 <body>
-
 <header class="topbar">
   <div class="wrap topbar-in">
-    <a class="brand" href="#top" aria-label="Bright Consultancy home">
+    <a class="brand" href="/" aria-label="Bright Consultancy home">
       <span>Bright Consultancy<small>Tender support for UK care providers</small></span>
     </a>
     <div class="header-actions">
       <nav class="main" aria-label="Main">
-        <a href="#top">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="/" class="active" aria-current="page">Home</a>
+        <a href="/services/">Services</a>
+        <a href="/contact/">Contact</a>
       </nav>
       <a class="btn btn-primary header-call" href="tel:+2349035148120" aria-label="Call Bright Consultancy on +234 903 514 8120">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -265,9 +276,7 @@ footer a:hover{color:#fff;text-decoration:underline}
     </div>
   </div>
 </header>
-
 <main id="top">
-
 <!-- HERO : problem first -->
 <div class="hero">
   <div class="wrap hero-grid">
@@ -276,9 +285,9 @@ footer a:hover{color:#fff;text-decoration:underline}
       <h1>You deliver good care. Councils still pass you by.</h1>
       <p class="sub">Most care providers who lose council work do not lose on care. They lose on the bid. The route was wrong for their area, the evidence did not match what the buyer scores, or the documents answered a different question from the one on the page. We help you find the right routes where you already work and write bids that show your care in the way councils mark it.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="#contact">Get a free bid or no bid check</a>
+        <a class="btn btn-primary" href="/contact/">Get a free bid or no bid check</a>
         <a class="btn btn-outline-light" href="tel:+2349035148120" aria-label="Call Bright Consultancy on +234 903 514 8120">Call Now</a>
-        <a class="btn btn-outline-light" href="#routes">See live routes now</a>
+        <a class="btn btn-outline-light" href="/services/#routes">See live routes now</a>
       </div>
       <div class="hero-points">
         <div class="hero-point"><strong>South East first</strong><span>We start where our pilot work is deepest, Surrey and Windsor and Maidenhead, then widen with you.</span></div>
@@ -375,364 +384,19 @@ footer a:hover{color:#fff;text-decoration:underline}
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services" aria-labelledby="services-h">
-  <div class="wrap">
-    <p class="label">What we do</p>
-    <h2 id="services-h">Services, from first search to submission</h2>
-    <p class="lead" style="margin-top:.7rem">Take one service on its own, or let us carry the whole route. Every piece starts with the free check, so you never pay to find out a bid is wrong for you.</p>
-    <div class="svc-grid">
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
-        <h3>Find contracts in your location</h3>
-        <p>We search Find a Tender and Contracts Finder for live routes in the areas you can truly cover, and send you the ones that fit your care type and size.</p>
-      </article>
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-        <h3>Bid or no bid check</h3>
-        <p>A clear yes, no or not yet on any tender, with the reasons in plain words. Location, CQC, size, deadline and scoring, checked before you commit time or money.</p>
-      </article>
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
-        <h3>DPS and framework applications</h3>
-        <p>Full help to join open DPS and framework routes, the sensible first step for most small and mid size providers. Paperwork, evidence and submission, done in order.</p>
-      </article>
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-        <h3>Tender writing</h3>
-        <p>Answers written around the marking guide, in your voice and with your real proof. Staffing, safeguarding, quality, mobilisation and social value, each answered in full.</p>
-      </article>
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg></div>
-        <h3>Evidence and document pack</h3>
-        <p>We build the pack behind the answers. Policies, insurance, accounts, CQC reports and references, checked so every document matches what the answers claim.</p>
-      </article>
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.6 8-10V5l-8-3-8 3v7c0 6.4 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <h3>CQC and compliance alignment</h3>
-        <p>We line up what the tender asks on CQC and compliance with what your reports and policies actually say, and flag gaps early enough to fix or to walk away.</p>
-      </article>
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg></div>
-        <h3>Submission check and next steps</h3>
-        <p>A final check of the full bid before it goes, then a plain plan for what happens after. Call off rounds, start dates, and what to build for the next bid.</p>
-      </article>
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <h3>Deadline watch for your area</h3>
-        <p>Some good routes close fast. Tell us your areas and care types and we will flag new notices and closing dates that fit you, while there is still time to act.</p>
-      </article>
-      <article class="svc">
-        <div class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Support for owners and managers</h3>
-        <p>Short, plain guidance for busy owners and registered managers. What to gather, what to sign, and what we are handling, without tender jargon.</p>
-      </article>
+<!-- HOME CTA : onward to the other pages -->
+<section class="home-cta" aria-labelledby="home-cta-h">
+  <div class="wrap home-cta-in">
+    <div>
+      <h2 id="home-cta-h">See what we can do for you</h2>
+      <p>Browse the full list of services, live routes, our four step process and clear prices on the Services page. Or go straight to the free check and find out where you stand.</p>
+    </div>
+    <div class="home-cta-btns">
+      <a class="btn btn-primary" href="/services/">View Services</a>
+      <a class="btn btn-ghost" href="/contact/">Get the free check</a>
     </div>
   </div>
 </section>
-
-<!-- LIVE ROUTES -->
-<section class="routes" id="routes" aria-labelledby="routes-h">
-  <div class="wrap">
-    <p class="label">Proof it is live</p>
-    <h2 id="routes-h">Two open routes we are working from right now</h2>
-    <p class="lead" style="margin-top:.7rem">These are real, open notices from Find a Tender, checked in our pilot search on 22 November 2026. They show the kind of route we start with. Open to new entrants, in the South East, and suited to building a track record.</p>
-    <div class="route-grid">
-      <article class="route">
-        <span class="tag">Open now · Supported living</span>
-        <h3>Surrey Care and Support with Community Accommodation DPS</h3>
-        <p>Surrey County Council route for supported living, in 8 lots. It stays open to new entrants for its full life, which makes it a strong first route for providers who can cover Surrey.</p>
-        <dl>
-          <div><dt>Buyer</dt><dd>Surrey County Council</dd></div>
-          <div><dt>Type</dt><dd>DPS, 8 lots</dd></div>
-          <div><dt>Total DPS value</dt><dd>£690,900,000 ex VAT</dd></div>
-          <div><dt>Closes</dt><dd>31 March 2029</dd></div>
-        </dl>
-        <p style="margin-top:.8rem">The total value is the value of the whole DPS over its life. It is not one job and it is not guaranteed work. Joining puts you in line for work as Surrey buys it.</p>
-        <a class="src" href="https://www.find-tender.service.gov.uk/Notice/028600-2023" target="_blank" rel="noopener">Read the official notice on Find a Tender</a>
-      </article>
-      <article class="route">
-        <span class="tag">Open now · Domiciliary care</span>
-        <h3>Windsor and Maidenhead Adult Domiciliary Care DPS</h3>
-        <p>Royal Borough of Windsor and Maidenhead route for true home based domiciliary care. A clear fit for local providers with strong CQC standing who want council work in the borough.</p>
-        <dl>
-          <div><dt>Buyer</dt><dd>Windsor and Maidenhead</dd></div>
-          <div><dt>Type</dt><dd>DPS, domiciliary care</dd></div>
-          <div><dt>CQC ask</dt><dd>Good or Outstanding in all domains</dd></div>
-          <div><dt>Closes</dt><dd>28 February 2027</dd></div>
-        </dl>
-        <p style="margin-top:.8rem">Value is not stated in the notice. If your CQC rating does not meet the ask above, this is not the right first route. The free check will say so and point to a better fit.</p>
-        <a class="src" href="https://www.find-tender.service.gov.uk/Notice/000177-2022" target="_blank" rel="noopener">Read the official notice on Find a Tender</a>
-      </article>
-    </div>
-    <p class="routes-note">Other open routes from the same pilot search include Brighton and Hove, Harrow, Milton Keynes, Hampshire, Haringey and West Sussex, with deadlines from December 2026 onwards. Tell us your area in the form below and we will check the live list against your service.</p>
-  </div>
-</section>
-
-<!-- PROCESS -->
-<section id="process" aria-labelledby="process-h">
-  <div class="wrap">
-    <p class="label">How it works</p>
-    <h2 id="process-h">Four steps, in order</h2>
-    <p class="lead" style="margin-top:.7rem">No long sales process. You find out if a route is worth it at step one, before any fee.</p>
-    <div class="steps-grid">
-      <article class="step">
-        <div class="snum">Step 1</div>
-        <h3>Free discovery and check</h3>
-        <p>We talk through your agency, your areas and what you want from council work. If you already have a tender in mind, we run the bid or no bid check on it.</p>
-        <span class="free">Free</span>
-      </article>
-      <article class="step">
-        <div class="snum">Step 2</div>
-        <h3>Setup review</h3>
-        <p>We review your CQC standing, evidence, staffing and capacity against the route. You get a short list of what is ready, what needs work, and the fixed fee to proceed.</p>
-      </article>
-      <article class="step">
-        <div class="snum">Step 3</div>
-        <h3>Build the bid</h3>
-        <p>We write and build the application with you. You supply the facts of your service. We shape them into scored answers and a matching document pack.</p>
-      </article>
-      <article class="step">
-        <div class="snum">Step 4</div>
-        <h3>Submit and win work</h3>
-        <p>We check and submit on time, then plan the part most people miss. How work is actually called off, and what to do in the first weeks after you join.</p>
-      </article>
-    </div>
-
-    <div class="fit-grid">
-      <article class="fit yes">
-        <h3>This fits you if</h3>
-        <ul>
-          <li>You are CQC registered and rated Good or Outstanding, or close with a clear plan</li>
-          <li>You deliver domiciliary care or supported living in the South East or London</li>
-          <li>You want council work but have no time to watch tender portals every week</li>
-          <li>You have bid before and scored lower than your care deserves</li>
-        </ul>
-      </article>
-      <article class="fit no">
-        <h3>This does not fit yet if</h3>
-        <ul>
-          <li>You are not yet CQC registered. Get registered first, then come back for routes</li>
-          <li>You need work to start this month. Council routes take time to join and call off</li>
-          <li>You want a promise of a win. No honest bid writer can give you one, and we will not</li>
-          <li>You want to bid far outside the area you can staff safely</li>
-        </ul>
-      </article>
-    </div>
-
-    <div class="types">
-      <h3>Care types and contract sizes, in plain words</h3>
-      <p style="color:var(--muted)">We work across the main home care types councils buy.</p>
-      <div class="chips">
-        <span class="chip">Domiciliary care</span>
-        <span class="chip">Supported living</span>
-        <span class="chip">Supported accommodation</span>
-        <span class="chip">Respite care</span>
-        <span class="chip">Dementia care</span>
-        <span class="chip">Live in care</span>
-      </div>
-      <div class="sizes">
-        <div class="size"><strong>Small · up to £500k</strong><span>The right starting size for most new bidders. Less competition from national firms, faster to evidence.</span></div>
-        <div class="size"><strong>Medium · £500k to £1.5M</strong><span>For providers with a track record, stable staffing and accounts that support the size.</span></div>
-        <div class="size"><strong>Large · £1.5M and above</strong><span>Usually single winner contracts. We will only advise these where the fit is truly there.</span></div>
-      </div>
-      <p style="color:var(--muted);margin-top:1rem;font-size:.95rem">A DPS is a list buyers keep adding providers to while it is open. A framework is a set group of providers buyers call work off from. A one off contract is a single award for a set period. The free check explains which type suits you and why.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="pricing" id="prices" aria-labelledby="prices-h">
-  <div class="wrap">
-    <p class="label">Clear prices</p>
-    <h2 id="prices-h">What it costs</h2>
-    <p class="lead" style="margin-top:.7rem">Fixed fees, agreed in writing before work starts. The check is always free, and a no at that stage costs you nothing.</p>
-    <div class="price-grid">
-      <article class="price featured">
-        <div class="who">Start here</div>
-        <h3>Bid or no bid check</h3>
-        <div class="amount">Free</div>
-        <p>A straight answer on any live tender or route. Fit on location, CQC, size and deadline, plus what it would take to bid well.</p>
-      </article>
-      <article class="price">
-        <div class="who">First route</div>
-        <h3>DPS and framework entry</h3>
-        <div class="amount">From £500</div>
-        <p>Full application support for one open DPS or framework route, including the evidence pack and submission check.</p>
-      </article>
-      <article class="price">
-        <div class="who">First full tender</div>
-        <h3>First tender, fully written</h3>
-        <div class="amount">Around £850</div>
-        <p>Your first full tender written with you, for a small contract that fits your size and area. Final fee confirmed after the free check.</p>
-      </article>
-      <article class="price">
-        <div class="who">Larger bids</div>
-        <h3>Standard tender support</h3>
-        <div class="amount">From £1,500</div>
-        <p>For medium contracts and more complex bids with several lots or long quality sections. Scoped and priced per bid, in advance.</p>
-      </article>
-    </div>
-    <p style="color:var(--muted);margin-top:1.2rem;max-width:78ch">No fee is a promise of a win. Councils decide awards, and any writer who guarantees a result is not being straight with you. What we guarantee is the work. The right route, honest advice, and a bid that gives your care its best fair chance.</p>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section aria-labelledby="faq-h">
-  <div class="wrap">
-    <p class="label">Questions</p>
-    <h2 id="faq-h">What providers ask us first</h2>
-    <div class="faq-list">
-      <details class="faq">
-        <summary>We have never bid before. Where do we start?</summary>
-        <p>With the free check and, in most cases, an open DPS route in your own area. It is the lowest risk way to get onto a council list, learn what buyers ask, and build a record you can use in bigger bids later.</p>
-      </details>
-      <details class="faq">
-        <summary>Our CQC rating is Requires Improvement. Can we still bid?</summary>
-        <p>For some routes, no, and we will tell you that in the check rather than take a fee. For others, a clear improvement plan and strong evidence in the areas you do well can still be worth a bid. It depends on the exact wording of the notice, which is why the check comes first.</p>
-      </details>
-      <details class="faq">
-        <summary>How long does a bid take?</summary>
-        <p>A DPS application with your documents ready can be built in days. A full tender usually needs two to four weeks of work together, and portals often allow four to six weeks in total. Starting at the deadline is the most common avoidable failure, so talk to us as soon as you see a route you like.</p>
-      </details>
-      <details class="faq">
-        <summary>Do you only work in the South East?</summary>
-        <p>Our pilot work and deepest live list are in the South East and London, so that is where we can advise best today. If you are elsewhere in the UK, still send the form. If we cannot help well, we will say so and point you to the right official route to watch.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact" aria-labelledby="contact-h">
-  <div class="wrap">
-    <p class="label">Contact</p>
-    <h2 id="contact-h">Talk to a Specialist</h2>
-    <p style="color:#cfdcf0;max-width:62ch;margin-top:.6rem">Call or message us first if you want to talk it through, or use the form below for the free bid or no bid check. The form asks for your agency name, your region and your CQC status, so our first reply can already say whether a live route fits you.</p>
-
-    <div class="talk-grid" aria-label="Call or WhatsApp">
-      <article class="talk-card">
-        <div class="talk-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-        <h3>Call Us</h3>
-        <p class="talk-desc">Mon to Fri, 9am to 6pm<br><span class="nigeria">Nigerian number for now</span></p>
-        <a class="btn btn-primary talk-btn" href="tel:+2349035148120">Call Now</a>
-      </article>
-      <article class="talk-card">
-        <div class="talk-icon wa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
-        <h3>WhatsApp Us</h3>
-        <p class="talk-num"><a href="https://wa.me/2349035148120" target="_blank" rel="noopener">+234 903 514 8120</a></p>
-        <p class="talk-desc">Message any time<br>Reply within 1 hour in work hours</p>
-        <a class="btn btn-whatsapp talk-btn" href="https://wa.me/2349035148120?text=Hello%20Bright%20Consultancy%2C%20I%20would%20like%20a%20free%20bid%20or%20no%20bid%20check%20for%20my%20care%20agency." target="_blank" rel="noopener">Chat on WhatsApp</a>
-      </article>
-    </div>
-
-    <div class="contact-grid">
-      <div>
-        <div class="contact-card">
-          <h3>Email us direct</h3>
-          <p class="big"><a href="mailto:brightvictorydesigns@gmail.com">brightvictorydesigns@gmail.com</a></p>
-          <p>Best if you already have a tender link to share. Paste the link in your message and ask for the free bid or no bid check.</p>
-        </div>
-        <div class="contact-card">
-          <h3>What happens next</h3>
-          <p>1. We read your form and check live routes for your region and care type.</p>
-          <p>2. We reply by email with a straight fit view and the next step, or a clear no and why.</p>
-          <p>3. If the fit is there, we agree a fixed fee in writing before any paid work starts.</p>
-        </div>
-        <div class="contact-card">
-          <h3>Bright Consultancy</h3>
-          <p>Tender support for UK care providers, from the team at Bright Consultancy. We also build websites and funnels for small businesses, so your bid and your public face can tell the same strong story.</p>
-        </div>
-      </div>
-      <form id="qualifyForm" novalidate>
-        <h3>Free bid or no bid check</h3>
-        <p class="fsub">Fields marked * are needed so we can judge fit. Submitting opens your email app with everything filled in, ready to send to us. Nothing is stored on this page.</p>
-        <div class="fgrid">
-          <div class="field">
-            <label for="f-name">Your name <span class="req">*</span></label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Jane Smith">
-          </div>
-          <div class="field">
-            <label for="f-email">Your email <span class="req">*</span></label>
-            <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@youragency.co.uk">
-          </div>
-          <div class="field">
-            <label for="f-agency">Agency name <span class="req">*</span></label>
-            <input id="f-agency" name="agency" type="text" autocomplete="organization" required placeholder="e.g. Sunrise Home Care Ltd">
-          </div>
-          <div class="field">
-            <label for="f-phone">Phone, if you prefer a call</label>
-            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional">
-          </div>
-          <div class="field">
-            <label for="f-region">UK region <span class="req">*</span></label>
-            <select id="f-region" name="region" required>
-              <option value="">Choose your region</option>
-              <option>South East</option>
-              <option>London</option>
-              <option>South West</option>
-              <option>East of England</option>
-              <option>West Midlands</option>
-              <option>East Midlands</option>
-              <option>North West</option>
-              <option>North East</option>
-              <option>Yorkshire and the Humber</option>
-              <option>Wales</option>
-              <option>Scotland</option>
-              <option>Northern Ireland</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-cqc">CQC status <span class="req">*</span></label>
-            <select id="f-cqc" name="cqc" required>
-              <option value="">Choose your status</option>
-              <option>Outstanding</option>
-              <option>Good</option>
-              <option>Requires Improvement</option>
-              <option>Inadequate</option>
-              <option>Registered, not yet rated</option>
-              <option>Not yet registered</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-care">Main type of care</label>
-            <select id="f-care" name="care">
-              <option value="">Choose if you wish</option>
-              <option>Domiciliary care</option>
-              <option>Supported living</option>
-              <option>Supported accommodation</option>
-              <option>Respite care</option>
-              <option>Dementia care</option>
-              <option>Live in care</option>
-              <option>More than one of these</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-route">Route you have in mind</label>
-            <select id="f-route" name="route">
-              <option value="">Choose if you wish</option>
-              <option>Surrey DPS</option>
-              <option>Windsor and Maidenhead DPS</option>
-              <option>Another live tender, I will share the link</option>
-              <option>No route yet, please find one for me</option>
-            </select>
-          </div>
-          <div class="field full">
-            <label for="f-msg">Anything else we should know</label>
-            <textarea id="f-msg" name="message" placeholder="Areas you cover, team size, a tender link, or a deadline you are worried about."></textarea>
-          </div>
-        </div>
-        <div class="form-actions">
-          <button class="btn btn-primary" type="submit">Send my free check request</button>
-          <button class="btn btn-ghost" type="button" id="copyBtn">Copy my answers</button>
-        </div>
-        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
-        <p class="form-note">Prefer email only? Write to <a href="mailto:brightvictorydesigns@gmail.com">brightvictorydesigns@gmail.com</a> with your agency name, region and CQC status and we will run the same check.</p>
-      </form>
-    </div>
-  </div>
-</section>
-
 </main>
 
 <footer>
@@ -752,83 +416,16 @@ footer a:hover{color:#fff;text-decoration:underline}
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/contact/">Contact</a></li>
       </ul>
-      <a class="btn footer-cta" href="#contact">Book A Free Tender Review</a>
+      <a class="btn footer-cta" href="/contact/">Book A Free Tender Review</a>
     </div>
   </div>
   <div class="footer-bottom">
     <div class="wrap">© 2026 Bright Consultancy. All rights reserved.</div>
   </div>
 </footer>
-
-<script>
-(function(){
-  var form = document.getElementById('qualifyForm');
-  var status = document.getElementById('formStatus');
-  function val(id){ var el = document.getElementById(id); return el ? el.value.trim() : ''; }
-  function buildSummary(){
-    var lines = [
-      'Free bid or no bid check request',
-      '',
-      'Name: ' + val('f-name'),
-      'Email: ' + val('f-email'),
-      'Agency: ' + val('f-agency'),
-      'Phone: ' + (val('f-phone') || 'Not given'),
-      'UK region: ' + val('f-region'),
-      'CQC status: ' + val('f-cqc'),
-      'Main type of care: ' + (val('f-care') || 'Not given'),
-      'Route in mind: ' + (val('f-route') || 'Not given'),
-      '',
-      'Anything else:',
-      val('f-msg') || 'Not given'
-    ];
-    return lines.join('\n');
-  }
-  function showStatus(msg){
-    status.textContent = msg;
-    status.className = 'form-status show ok';
-  }
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var required = ['f-name','f-email','f-agency','f-region','f-cqc'];
-    var missing = [];
-    required.forEach(function(id){
-      var el = document.getElementById(id);
-      if(!el.value.trim()){ missing.push(el); el.focus(); }
-    });
-    if(missing.length){
-      status.textContent = 'Please fill in the marked fields so we can judge fit. The first empty one is highlighted for you.';
-      status.className = 'form-status show ok';
-      return;
-    }
-    var emailEl = document.getElementById('f-email');
-    if(emailEl.value.indexOf('@') === -1){
-      status.textContent = 'That email does not look complete. Please check it so we can reply to you.';
-      status.className = 'form-status show ok';
-      emailEl.focus();
-      return;
-    }
-    var subject = 'Free bid or no bid check for ' + val('f-agency');
-    var href = 'mailto:brightvictorydesigns@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(buildSummary());
-    showStatus('Your email app should now open with your request ready to send. If it does not open, use the Copy my answers button and paste them into an email to brightvictorydesigns@gmail.com.');
-    var mailLink = document.createElement('a');
-    mailLink.href = href;
-    document.body.appendChild(mailLink);
-    mailLink.click();
-    document.body.removeChild(mailLink);
-  });
-  document.getElementById('copyBtn').addEventListener('click', function(){
-    var text = buildSummary();
-    function done(){ showStatus('Copied. Paste your answers into an email to brightvictorydesigns@gmail.com and send when you are ready.'); }
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(text).then(done, function(){ showStatus('Copy did not work in this browser. Select the form answers and copy them by hand, or use the send button above.'); });
-    } else {
-      showStatus('Copy is not available in this browser. Use the send button above and your email app will carry your answers.');
-    }
-  });
-})();
-</script>
 </body>
 </html>
