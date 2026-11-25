@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>Contact | Bright Consultancy</title>
+<meta name="description" content="Bright Consultancy helps UK care providers find the right council routes in their area and write bids that answer what buyers score. Free bid or no bid check first.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --surface2:#eef1f5;
+  --ink:#13233f; --muted:#52637a; --line:#d9e0ea;
+  --navy:#0e2242; --navy2:#17335f; --navy-ink:#ffffff;
+  --accent:#c75b00; --accent-strong:#a84e00; --accent-soft:#fdf0e3;
+  --gold:#b8860b; --good:#0f6b3f; --good-soft:#e6f4ec;
+  --warn-soft:#fff4d6; --warn-ink:#6b4e00;
+  --radius-s:8px; --radius-m:14px; --radius-l:22px;
+  --shadow:0 10px 30px rgba(14,34,66,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0a1424; --surface:#12233f; --surface2:#162a4a;
+    --ink:#edf2f8; --muted:#a9b8cc; --line:#263b5e;
+    --navy:#081426; --navy2:#10264a; --navy-ink:#ffffff;
+    --accent:#ff8a2a; --accent-strong:#ffa04d; --accent-soft:#2b1e0f;
+    --gold:#e9b44c; --good:#4cc38a; --good-soft:#123527;
+    --warn-soft:#2e270e; --warn-ink:#e9c46a;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;font-size:17px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--accent-strong)}
+h1,h2,h3{font-family:"Lora",Georgia,serif;line-height:1.15;color:var(--ink);margin:0}
+h1{font-size:clamp(2rem,5.2vw,3.4rem);font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:700}
+h3{font-size:1.18rem;font-weight:600}
+p{margin:0}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.label{font-size:.82rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-strong);margin-bottom:.6rem}
+.lead{font-size:1.13rem;color:var(--muted);max-width:62ch}
+section{padding:3.8rem 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:50px;padding:.8rem 1.4rem;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-strong)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-light{background:#fff;color:var(--navy)}
+.btn-outline-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+/* Pages (Home / Services / Contact) */
+.page{display:block}
+nav.main a.active{background:var(--navy2);color:#fff;box-shadow:inset 0 -3px 0 var(--accent)}
+.page-hero{background:var(--navy);color:#fff;padding:2.8rem 0 3rem}
+.page-hero h1{color:#fff}
+.page-hero .label{color:#ffb066}
+.page-hero p.sub{color:#cfdcf0;font-size:1.12rem;margin-top:.9rem;max-width:60ch}
+.home-cta{background:var(--surface);border-block:1px solid var(--line)}
+.home-cta-in{display:flex;align-items:center;justify-content:space-between;gap:1.6rem;flex-wrap:wrap}
+.home-cta p{color:var(--muted);margin-top:.5rem;max-width:56ch}
+.home-cta-btns{display:flex;gap:.8rem;flex-wrap:wrap;flex:none}
+@media (max-width:600px){.home-cta-btns{width:100%}.home-cta-btns .btn{flex:1}}
+/* Header */
+.topbar{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.7rem;color:#fff;text-decoration:none;font-weight:800;font-size:1.02rem;min-height:44px}
+.brand small{display:block;font-weight:500;font-size:.78rem;color:#c4d2e8;letter-spacing:.02em}
+nav.main{display:flex;gap:.2rem;flex-wrap:wrap}
+nav.main a{color:#dbe5f3;text-decoration:none;font-weight:600;font-size:.95rem;padding:.55rem .7rem;border-radius:8px;min-height:40px;display:inline-flex;align-items:center}
+nav.main a:hover{background:var(--navy2);color:#fff}
+.header-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.header-call{min-height:46px;padding:.65rem 1.15rem;font-size:.96rem;white-space:nowrap;box-shadow:0 6px 18px rgba(199,91,0,.35)}
+.header-call svg{width:18px;height:18px;flex:none}
+/* Hero */
+.hero{background:var(--navy);color:#fff;padding:3.2rem 0 3.6rem}
+.hero h1{color:#fff}
+.hero .label{color:#ffb066}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:2.4rem;align-items:center}
+.hero-copy p.sub{color:#cfdcf0;font-size:1.14rem;margin-top:1.1rem;max-width:56ch}
+.hero-ctas{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}
+.hero-points{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin-top:1.8rem}
+.hero-point{background:var(--navy2);border:1px solid #24406e;border-radius:var(--radius-m);padding:.85rem 1rem}
+.hero-point strong{display:block;color:#fff;font-size:.98rem}
+.hero-point span{color:#b9c9e2;font-size:.9rem;line-height:1.45;display:block;margin-top:.15rem}
+.hero-fig{border-radius:var(--radius-l);overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.35)}
+.hero-fig img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.hero-fig figcaption{background:#fff;color:#52637a;font-size:.85rem;padding:.6rem .9rem}
+@media (prefers-color-scheme: dark){.hero-fig figcaption{background:var(--surface);color:var(--muted)}}
+.trustbar{background:var(--surface);border-bottom:1px solid var(--line)}
+.trustbar-in{display:flex;gap:1.6rem;flex-wrap:wrap;padding:1rem 0;font-size:.95rem;color:var(--muted)}
+.trustbar-in strong{color:var(--ink)}
+/* Problem */
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.8rem}
+.problem-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);padding:1.4rem}
+.problem-card .num{font-family:"Lora",serif;font-size:2rem;font-weight:700;color:var(--accent);line-height:1}
+.problem-card h3{margin:.6rem 0 .4rem}
+.problem-card p{color:var(--muted);font-size:.98rem}
+/* Mistakes */
+.mistakes{background:var(--surface);border-block:1px solid var(--line)}
+.mistake-list{margin-top:1.8rem;display:grid;gap:0;border-top:1px solid var(--line)}
+.mistake{display:grid;grid-template-columns:64px 1fr;gap:1.1rem;padding:1.35rem .2rem;border-bottom:1px solid var(--line);align-items:start}
+.mistake .mnum{width:52px;height:52px;border-radius:50%;background:var(--accent-soft);color:var(--accent-strong);display:grid;place-items:center;font-family:"Lora",serif;font-weight:700;font-size:1.3rem}
+.mistake h3{margin-bottom:.3rem}
+.mistake p{color:var(--muted);max-width:72ch}
+.mistake p strong{color:var(--ink)}
+.callout{margin-top:1.6rem;background:var(--warn-soft);color:var(--warn-ink);border-radius:var(--radius-m);padding:1.1rem 1.3rem;font-size:1rem}
+.callout strong{color:inherit}
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.8rem}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);padding:1.35rem}
+.svc .ic{width:44px;height:44px;border-radius:10px;background:var(--navy);color:#fff;display:grid;place-items:center;margin-bottom:.8rem}
+.svc .ic svg{width:22px;height:22px}
+.svc h3{margin-bottom:.35rem}
+.svc p{color:var(--muted);font-size:.97rem}
+.svc.wide{grid-column:span 1}
+/* Live routes */
+.routes{background:var(--navy);color:#fff}
+.routes h2,.routes h3{color:#fff}
+.routes .label{color:#ffb066}
+.routes .lead{color:#cfdcf0}
+.route-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.8rem}
+.route{background:#fff;color:var(--ink);border-radius:var(--radius-l);padding:1.6rem}
+@media (prefers-color-scheme: dark){.route{background:var(--surface)}}
+.route .tag{display:inline-block;background:var(--good-soft);color:var(--good);font-weight:800;font-size:.8rem;padding:.3rem .7rem;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+.route h3{margin:.8rem 0 .4rem;font-size:1.3rem}
+.route dl{margin:1rem 0 0;display:grid;gap:.55rem}
+.route dl div{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding-top:.55rem;font-size:.96rem}
+.route dl dt{color:var(--muted);font-weight:600}
+.route dl dd{margin:0;font-weight:700;text-align:right}
+.route p{color:var(--muted);font-size:.98rem}
+.route a.src{font-weight:700;font-size:.95rem;display:inline-flex;min-height:40px;align-items:center;margin-top:.6rem}
+.routes-note{margin-top:1.2rem;color:#b9c9e2;font-size:.95rem;max-width:78ch}
+/* Steps */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.8rem;counter-reset:step}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);padding:1.35rem;position:relative}
+.step .snum{font-size:.82rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-strong)}
+.step h3{margin:.5rem 0 .4rem}
+.step p{color:var(--muted);font-size:.96rem}
+.step .free{display:inline-block;margin-top:.7rem;background:var(--good-soft);color:var(--good);font-weight:800;font-size:.82rem;padding:.25rem .6rem;border-radius:999px}
+/* Fit + types */
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.8rem}
+.fit{border-radius:var(--radius-m);padding:1.5rem;border:1px solid var(--line);background:var(--surface)}
+.fit.yes{border-top:6px solid var(--good)}
+.fit.no{border-top:6px solid var(--accent)}
+.fit ul{margin:.8rem 0 0;padding-left:1.2rem;color:var(--muted);display:grid;gap:.45rem}
+.fit li::marker{color:var(--ink)}
+.types{margin-top:1.6rem;background:var(--surface2);border-radius:var(--radius-m);padding:1.4rem}
+.types h3{margin-bottom:.6rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.4rem}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.45rem .9rem;font-weight:600;font-size:.93rem;min-height:36px;display:inline-flex;align-items:center}
+.sizes{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem}
+.size{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-s);padding:1rem}
+.size strong{display:block;font-size:1.05rem}
+.size span{color:var(--muted);font-size:.93rem}
+/* Pricing */
+.pricing{background:var(--surface);border-block:1px solid var(--line)}
+.price-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.8rem}
+.price{border:1px solid var(--line);border-radius:var(--radius-m);padding:1.4rem;background:var(--bg);display:flex;flex-direction:column;gap:.4rem}
+.price.featured{background:var(--navy);color:#fff;border-color:var(--navy)}
+.price.featured h3,.price.featured .amount{color:#fff}
+.price.featured p{color:#cfdcf0}
+.price .amount{font-family:"Lora",serif;font-size:1.9rem;font-weight:700;color:var(--ink);line-height:1.1}
+.price p{color:var(--muted);font-size:.95rem}
+.price .who{font-size:.85rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-strong)}
+.price.featured .who{color:#ffb066}
+/* FAQ */
+.faq-list{margin-top:1.6rem;display:grid;gap:.7rem;max-width:820px}
+details.faq{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius-m);padding:.4rem 1.2rem}
+details.faq summary{cursor:pointer;font-weight:700;font-size:1.02rem;padding:.8rem 0;min-height:44px;display:flex;align-items:center}
+details.faq p{color:var(--muted);padding:0 0 1rem;max-width:70ch}
+/* Contact */
+.contact{background:var(--navy);color:#fff}
+.contact h2,.contact h3{color:#fff}
+.contact .label{color:#ffb066}
+.talk-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.8rem}
+.talk-card{background:#fff;color:var(--ink);border-radius:var(--radius-l);padding:1.7rem 1.6rem;text-align:center;display:flex;flex-direction:column;align-items:center}
+@media (prefers-color-scheme: dark){.talk-card{background:var(--surface)}}
+.talk-card h3{color:var(--ink);font-size:1.25rem;margin-top:.9rem}
+.talk-icon{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff}
+.talk-icon svg{width:26px;height:26px}
+.talk-icon.wa{background:#25d366;color:#fff}
+.talk-num{font-size:1.35rem;font-weight:800;letter-spacing:-.01em;margin-top:.35rem;color:var(--ink)}
+.talk-num a{color:var(--ink);text-decoration:none}
+.talk-desc{color:var(--muted);font-size:.97rem;margin-top:.35rem;line-height:1.5}
+.talk-desc .nigeria{font-size:.88rem;font-weight:600}
+.talk-btn{margin-top:1.1rem;min-width:190px}
+.btn-whatsapp{background:#25d366;color:#fff}
+.btn-whatsapp:hover{background:#1eb85a;color:#fff}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:2rem;margin-top:1.6rem;align-items:start}
+.contact-card{background:var(--navy2);border:1px solid #24406e;border-radius:var(--radius-l);padding:1.5rem;margin-bottom:1rem}
+.contact-card p{color:#cfdcf0;font-size:.98rem;margin-top:.3rem}
+.contact-card a{color:#ffb066;font-weight:700;word-break:break-all}
+.contact-card .big{font-size:1.15rem}
+form{background:#fff;color:var(--ink);border-radius:var(--radius-l);padding:1.7rem;box-shadow:var(--shadow)}
+@media (prefers-color-scheme: dark){form{background:var(--surface)}}
+form h3{margin-bottom:.3rem}
+form .fsub{color:var(--muted);font-size:.96rem;margin-bottom:1.2rem}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field{display:grid;gap:.35rem}
+.field.full{grid-column:1/-1}
+.field label{font-weight:700;font-size:.93rem}
+.field label .req{color:var(--accent-strong)}
+.field input,.field select,.field textarea{min-height:48px;border:1.5px solid var(--line);border-radius:10px;padding:.7rem .85rem;font:inherit;font-size:1rem;background:var(--surface);color:var(--ink);width:100%}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:3px solid var(--accent-soft);border-color:var(--accent)}
+.form-note{font-size:.9rem;color:var(--muted);margin-top:1rem}
+.form-status{margin-top:1rem;border-radius:var(--radius-s);padding:.9rem 1.1rem;font-size:.97rem;display:none}
+.form-status.show{display:block}
+.form-status.ok{background:var(--good-soft);color:var(--good)}
+.form-actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem}
+/* Footer */
+footer{background:var(--accent) !important;background-color:var(--accent) !important;color:#fff;font-size:.95rem;padding:3.4rem 0 0}
+.footer-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:2.5rem;padding-bottom:3.2rem}
+.footer-name{font-family:"Public Sans",system-ui,sans-serif;font-size:1.3rem;font-weight:800;color:#fff;line-height:1.2}
+.footer-brand p{color:#fff;font-size:.96rem;line-height:1.55;margin-top:.7rem;max-width:36ch}
+.footer-col h4{font-family:"Public Sans",system-ui,sans-serif;font-size:1rem;font-weight:700;color:#fff;margin:0 0 1rem;line-height:1.2}
+.footer-col ul{list-style:none;margin:0;padding:0;display:grid;gap:.7rem}
+.footer-col li{display:flex;align-items:center;gap:.6rem}
+.footer-col li svg{width:17px;height:17px;flex:none;color:#fff}
+footer a{color:#fff;text-decoration:none;display:inline-flex;align-items:center;min-height:32px}
+footer a:hover{color:#fff;text-decoration:underline}
+.footer-cta{margin-top:1.1rem;background:var(--navy);color:#fff;border-radius:10px;min-height:48px;padding:.75rem 1.25rem;font-size:.96rem;box-shadow:none}
+.footer-cta:hover{background:var(--navy2);color:#fff;text-decoration:none}
+.footer-bottom{background:var(--accent) !important;background-color:var(--accent) !important;border-top:1px solid rgba(255,255,255,.28);padding:1.05rem 0 1.15rem;text-align:center;font-size:.87rem;color:#fff}
+.footer-bottom .wrap{text-align:center}
+@media (max-width:960px){
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .hero-grid,.contact-grid,.talk-grid{grid-template-columns:1fr}
+  .problem-grid,.svc-grid{grid-template-columns:1fr 1fr}
+  .steps-grid,.price-grid{grid-template-columns:1fr 1fr}
+  .route-grid,.fit-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .footer-grid{grid-template-columns:1fr;gap:1.8rem;padding-bottom:2.2rem}
+  footer{padding-top:2.4rem}
+  .footer-cta{width:auto}
+  section{padding:2.8rem 0}
+  .problem-grid,.svc-grid,.steps-grid,.price-grid,.sizes,.fgrid{grid-template-columns:1fr}
+  .hero-points{grid-template-columns:1fr}
+  .mistake{grid-template-columns:48px 1fr}
+  .mistake .mnum{width:42px;height:42px;font-size:1.1rem}
+  nav.main a{padding:.5rem .5rem;font-size:.9rem}
+  .topbar-in{flex-direction:column;align-items:flex-start;gap:.5rem}
+  .header-actions{width:100%;justify-content:space-between}
+  .header-call{flex:1}
+  .btn{width:100%}
+  .hero-ctas{flex-direction:column}
+  .hero-ctas .btn{width:100%;flex:none;border-radius:14px;text-align:center}
+  .form-actions .btn{width:auto;flex:1}
+  .talk-btn{width:100%}
+  .talk-card{padding:1.5rem 1.2rem}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="/" aria-label="Bright Consultancy home">
+      <span>Bright Consultancy<small>Tender support for UK care providers</small></span>
+    </a>
+    <div class="header-actions">
+      <nav class="main" aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/services/">Services</a>
+        <a href="/contact/" class="active" aria-current="page">Contact</a>
+      </nav>
+      <a class="btn btn-primary header-call" href="tel:+2349035148120" aria-label="Call Bright Consultancy on +234 903 514 8120">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+  </div>
+</header>
+<main id="top">
+<!-- CONTACT -->
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <p class="label">Contact</p>
+    <h2 id="contact-h">Talk to a Specialist</h2>
+    <p style="color:#cfdcf0;max-width:62ch;margin-top:.6rem">Call or message us first if you want to talk it through, or use the form below for the free bid or no bid check. The form asks for your agency name, your region and your CQC status, so our first reply can already say whether a live route fits you.</p>
+
+    <div class="talk-grid" aria-label="Call or WhatsApp">
+      <article class="talk-card">
+        <div class="talk-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3>Call Us</h3>
+        <p class="talk-desc">Mon to Fri, 9am to 6pm<br><span class="nigeria">Nigerian number for now</span></p>
+        <a class="btn btn-primary talk-btn" href="tel:+2349035148120">Call Now</a>
+      </article>
+      <article class="talk-card">
+        <div class="talk-icon wa" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+        <h3>WhatsApp Us</h3>
+        <p class="talk-num"><a href="https://wa.me/2349035148120" target="_blank" rel="noopener">+234 903 514 8120</a></p>
+        <p class="talk-desc">Message any time<br>Reply within 1 hour in work hours</p>
+        <a class="btn btn-whatsapp talk-btn" href="https://wa.me/2349035148120?text=Hello%20Bright%20Consultancy%2C%20I%20would%20like%20a%20free%20bid%20or%20no%20bid%20check%20for%20my%20care%20agency." target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </article>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <div class="contact-card">
+          <h3>Email us direct</h3>
+          <p class="big"><a href="mailto:brightvictorydesigns@gmail.com">brightvictorydesigns@gmail.com</a></p>
+          <p>Best if you already have a tender link to share. Paste the link in your message and ask for the free bid or no bid check.</p>
+        </div>
+        <div class="contact-card">
+          <h3>What happens next</h3>
+          <p>1. We read your form and check live routes for your region and care type.</p>
+          <p>2. We reply by email with a straight fit view and the next step, or a clear no and why.</p>
+          <p>3. If the fit is there, we agree a fixed fee in writing before any paid work starts.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Bright Consultancy</h3>
+          <p>Tender support for UK care providers, from the team at Bright Consultancy. We also build websites and funnels for small businesses, so your bid and your public face can tell the same strong story.</p>
+        </div>
+      </div>
+      <form id="qualifyForm" novalidate>
+        <h3>Free bid or no bid check</h3>
+        <p class="fsub">Fields marked * are needed so we can judge fit. Submitting opens your email app with everything filled in, ready to send to us. Nothing is stored on this page.</p>
+        <div class="fgrid">
+          <div class="field">
+            <label for="f-name">Your name <span class="req">*</span></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Jane Smith">
+          </div>
+          <div class="field">
+            <label for="f-email">Your email <span class="req">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@youragency.co.uk">
+          </div>
+          <div class="field">
+            <label for="f-agency">Agency name <span class="req">*</span></label>
+            <input id="f-agency" name="agency" type="text" autocomplete="organization" required placeholder="e.g. Sunrise Home Care Ltd">
+          </div>
+          <div class="field">
+            <label for="f-phone">Phone, if you prefer a call</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional">
+          </div>
+          <div class="field">
+            <label for="f-region">UK region <span class="req">*</span></label>
+            <select id="f-region" name="region" required>
+              <option value="">Choose your region</option>
+              <option>South East</option>
+              <option>London</option>
+              <option>South West</option>
+              <option>East of England</option>
+              <option>West Midlands</option>
+              <option>East Midlands</option>
+              <option>North West</option>
+              <option>North East</option>
+              <option>Yorkshire and the Humber</option>
+              <option>Wales</option>
+              <option>Scotland</option>
+              <option>Northern Ireland</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-cqc">CQC status <span class="req">*</span></label>
+            <select id="f-cqc" name="cqc" required>
+              <option value="">Choose your status</option>
+              <option>Outstanding</option>
+              <option>Good</option>
+              <option>Requires Improvement</option>
+              <option>Inadequate</option>
+              <option>Registered, not yet rated</option>
+              <option>Not yet registered</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-care">Main type of care</label>
+            <select id="f-care" name="care">
+              <option value="">Choose if you wish</option>
+              <option>Domiciliary care</option>
+              <option>Supported living</option>
+              <option>Supported accommodation</option>
+              <option>Respite care</option>
+              <option>Dementia care</option>
+              <option>Live in care</option>
+              <option>More than one of these</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-route">Route you have in mind</label>
+            <select id="f-route" name="route">
+              <option value="">Choose if you wish</option>
+              <option>Surrey DPS</option>
+              <option>Windsor and Maidenhead DPS</option>
+              <option>Another live tender, I will share the link</option>
+              <option>No route yet, please find one for me</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="f-msg">Anything else we should know</label>
+            <textarea id="f-msg" name="message" placeholder="Areas you cover, team size, a tender link, or a deadline you are worried about."></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Send my free check request</button>
+          <button class="btn btn-ghost" type="button" id="copyBtn">Copy my answers</button>
+        </div>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        <p class="form-note">Prefer email only? Write to <a href="mailto:brightvictorydesigns@gmail.com">brightvictorydesigns@gmail.com</a> with your agency name, region and CQC status and we will run the same check.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <div class="footer-name">Bright Consultancy</div>
+      <p>We help UK home care agencies win council, NHS, and housing tender contracts.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Get In Touch</h4>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+2349035148120">+234 903 514 8120</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><a href="https://wa.me/2349035148120" target="_blank" rel="noopener">+234 903 514 8120 (WhatsApp)</a></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg><a href="mailto:brightvictorydesigns@gmail.com">brightvictorydesigns@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a class="btn footer-cta" href="/contact/">Book A Free Tender Review</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="wrap">© 2026 Bright Consultancy. All rights reserved.</div>
+  </div>
+</footer>
+<script>
+(function(){
+  var form = document.getElementById('qualifyForm');
+  var status = document.getElementById('formStatus');
+  function val(id){ var el = document.getElementById(id); return el ? el.value.trim() : ''; }
+  function buildSummary(){
+    var lines = [
+      'Free bid or no bid check request',
+      '',
+      'Name: ' + val('f-name'),
+      'Email: ' + val('f-email'),
+      'Agency: ' + val('f-agency'),
+      'Phone: ' + (val('f-phone') || 'Not given'),
+      'UK region: ' + val('f-region'),
+      'CQC status: ' + val('f-cqc'),
+      'Main type of care: ' + (val('f-care') || 'Not given'),
+      'Route in mind: ' + (val('f-route') || 'Not given'),
+      '',
+      'Anything else:',
+      val('f-msg') || 'Not given'
+    ];
+    return lines.join('\n');
+  }
+  function showStatus(msg){
+    status.textContent = msg;
+    status.className = 'form-status show ok';
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var required = ['f-name','f-email','f-agency','f-region','f-cqc'];
+    var missing = [];
+    required.forEach(function(id){
+      var el = document.getElementById(id);
+      if(!el.value.trim()){ missing.push(el); el.focus(); }
+    });
+    if(missing.length){
+      status.textContent = 'Please fill in the marked fields so we can judge fit. The first empty one is highlighted for you.';
+      status.className = 'form-status show ok';
+      return;
+    }
+    var emailEl = document.getElementById('f-email');
+    if(emailEl.value.indexOf('@') === -1){
+      status.textContent = 'That email does not look complete. Please check it so we can reply to you.';
+      status.className = 'form-status show ok';
+      emailEl.focus();
+      return;
+    }
+    var subject = 'Free bid or no bid check for ' + val('f-agency');
+    var href = 'mailto:brightvictorydesigns@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(buildSummary());
+    showStatus('Your email app should now open with your request ready to send. If it does not open, use the Copy my answers button and paste them into an email to brightvictorydesigns@gmail.com.');
+    var mailLink = document.createElement('a');
+    mailLink.href = href;
+    document.body.appendChild(mailLink);
+    mailLink.click();
+    document.body.removeChild(mailLink);
+  });
+  document.getElementById('copyBtn').addEventListener('click', function(){
+    var text = buildSummary();
+    function done(){ showStatus('Copied. Paste your answers into an email to brightvictorydesigns@gmail.com and send when you are ready.'); }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(done, function(){ showStatus('Copy did not work in this browser. Select the form answers and copy them by hand, or use the send button above.'); });
+    } else {
+      showStatus('Copy is not available in this browser. Use the send button above and your email app will carry your answers.');
+    }
+  });
+})();
+</script>
+</body>
+</html>
